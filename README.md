@@ -2,7 +2,7 @@
 
 Proyecto de datos que extrae, almacena y visualiza información de los jugadores activos de MLB según su país de nacimiento. Los datos se actualizan automáticamente todos los días mediante GitHub Actions, sin intervención manual.
 
-**Dashboard en vivo:** [agregar aquí el link de Streamlit Community Cloud]
+**Dashboard en vivo:** [\[agregar aquí el link de Streamlit Community Cloud\]](https://mlb-nationalities-9ck6y84jhbvvocqxkys8hz.streamlit.app/)
 
 ---
 
