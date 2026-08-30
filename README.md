@@ -1,12 +1,16 @@
-# ⚾ MLB Nacionalidades
-
 Proyecto de datos que extrae, almacena y visualiza información de los jugadores activos de MLB según su país de nacimiento. Los datos se actualizan automáticamente todos los días mediante GitHub Actions, sin intervención manual.
 
 **Dashboard en vivo:** [\[Link del Proyecto en Streamlit.\]](https://mlb-nationalities-9ck6y84jhbvvocqxkys8hz.streamlit.app/)
 
+
+
+https://github.com/user-attachments/assets/b4c0de7b-425c-4f3a-b4c8-6689246420f5
+
+
+
 ---
 
-## 📋 Descripción
+Descripción
 
 Este proyecto responde a la pregunta: *¿cómo está compuesta MLB en términos de nacionalidad de sus jugadores, y cómo cambia esa composición con el tiempo?*
 
@@ -20,7 +24,7 @@ Un dashboard en Streamlit consume esos datos y permite explorar la información 
 
 ---
 
-## 🛠️ Stack técnico
+## Stack técnico
 
 | Componente | Tecnología |
 |---|---|
@@ -35,7 +39,7 @@ Un dashboard en Streamlit consume esos datos y permite explorar la información 
 
 ---
 
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
 mlb-nacionalidades/
@@ -52,7 +56,7 @@ mlb-nacionalidades/
 
 ---
 
-## 🗃️ Modelo de datos
+## Tablas de la Base de Datos
 
 ### Tabla `jugadores`
 Foto actual de cada jugador activo (una fila por `player_id`, se actualiza por *upsert*).
@@ -81,10 +85,9 @@ Bitácora acumulativa: conteo de jugadores por país, una "foto" nueva cada día
 
 ---
 
-## 🔄 Automatización
+Automatización
 
 - **GitHub Actions** (`actualizar.yml`): corre todos los días a las 8:00 UTC (4:00am hora de RD). Instala dependencias, ejecuta `extract_daily.py`, y hace commit/push automático de la base de datos actualizada.
-- **Windows Task Scheduler**: se usó como ejercicio de aprendizaje para correr el script localmente. Actualmente desactivado a favor de GitHub Actions, que no depende de que la PC esté encendida.
 
 ---
 
@@ -97,7 +100,7 @@ La app de Streamlit (`app.py`) tiene dos secciones:
 
 ---
 
-## 🚀 Cómo correrlo localmente
+Cómo correrlo localmente
 
 ```bash
 git clone https://github.com/Cromerleon/mlb-nacionalidades.git
@@ -115,7 +118,6 @@ streamlit run app.py
 
 ---
 
-## 🗺️ Roadmap
 
 ### Tabla `estadisticas` (pendiente)
 
